@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import styles from "./DashBoard.module.css";
 import API_URL from "config/config";
-// import Paginate from "components/paginate/Paginate";
+import Paginate from "components/paginate/Paginate";
 
 
 
