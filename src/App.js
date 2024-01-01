@@ -1,13 +1,13 @@
 import React from 'react'
 import './App.css'
 
-// // CONTAINER
+// CONTAINER
 // import Register from './containers/register/Register';
-// import Home from './containers/home/Home';
+import Home from './containers/home/Home';
 // import QuestionPage from './containers/question/QuestionPage';
 // import AnswerPage from './containers/answer/AnswerPage'
 
-// import { BrowserRouter, Route, Routes } from 'react-router-dom'
+import { BrowserRouter, Route, Routes } from 'react-router-dom'
 // import MainPage from './containers/main-page/MainPage';
 // import Page from './containers/page/Page';
 // import Login from './containers/login/Login';
@@ -23,27 +23,26 @@ import './App.css'
 const App = () => {
   // const { user, setUser } = useUser({});
   return (
-    <h1>Testing</h1>
-    // <BrowserRouter>
-    //   <Routes>
-    //     <Route path="/" element={<Home />} />
-    //     <Route path="/page/" element={<LoginRoute><Page /></LoginRoute>}>
-    //       <Route path="/page/register" element={<Register setUser={setUser}/>} />
-    //       <Route path="/page/login" element={<Login setUser={setUser}/>} />
-    //       <Route path="/page/forgot-password" element={<ForgotPassword />} />
-    //       <Route path="/page/reset-password/:id" element={<ResetPassword />} />
-    //     </Route>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        {/* <Route path="/page/" element={<LoginRoute><Page /></LoginRoute>}>
+          <Route path="/page/register" element={<Register setUser={setUser}/>} />
+          <Route path="/page/login" element={<Login setUser={setUser}/>} />
+          <Route path="/page/forgot-password" element={<ForgotPassword />} />
+          <Route path="/page/reset-password/:id" element={<ResetPassword />} />
+        </Route> */}
 
-    //     <Route path="/main-page/" element={<ProtectedRoute><MainPage /></ProtectedRoute>}>
-    //       <Route path="/main-page/dash-board" element={<DashBoard setUser={setUser}/>} />
-    //       <Route path="/main-page/ask-question" element={<AskQuestion />} />
-    //       <Route path="/main-page/news/" element={<NewsPage />}>
-    //         <Route path="/main-page/news/question/:id" element={<AnswerPage />} />
-    //         <Route path="/main-page/news/question" element={<QuestionPage />} />  
-    //       </Route>
-    //     </Route>
-    //   </Routes>
-    // </BrowserRouter>
+        {/* <Route path="/main-page/" element={<ProtectedRoute><MainPage /></ProtectedRoute>}>
+          <Route path="/main-page/dash-board" element={<DashBoard setUser={setUser}/>} />
+          <Route path="/main-page/ask-question" element={<AskQuestion />} />
+          <Route path="/main-page/news/" element={<NewsPage />}>
+            <Route path="/main-page/news/question/:id" element={<AnswerPage />} />
+            <Route path="/main-page/news/question" element={<QuestionPage />} />  
+          </Route>
+        </Route> */}
+      </Routes>
+    </BrowserRouter>
   )
 }
 
