@@ -18,7 +18,7 @@ import { listsPlugin } from '@mdxeditor/editor/plugins/lists'
 import { quotePlugin } from '@mdxeditor/editor/plugins/quote'
 import { thematicBreakPlugin } from '@mdxeditor/editor/plugins/thematic-break'
 
-import API_URL from "config/config";
+const API_URL = process.env.REACT_APP_API_URL;;
 
 export default function AskQuestion() {
     const ref = useRef(null)

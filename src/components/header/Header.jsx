@@ -1,7 +1,6 @@
-import React, { useState } from "react";
+import React from "react";
 import styles from "./Header.module.css";
 import { searchIcon, notification, status } from './imports';
-import API_URL from "config/config";
 import { Link } from "react-router-dom";
 
 export default function Header({ setQuestions, user, setSearch, search }) {

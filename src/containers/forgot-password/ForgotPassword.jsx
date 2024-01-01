@@ -3,7 +3,9 @@ import "./imports";
 import styles from './ForgotPassword.module.css';
 import { ellipse5, logo } from "../login/imports";
 import { Link } from "react-router-dom"
-import API_URL from "config/config";
+
+const API_URL = process.env.REACT_APP_API_URL;
+
 export default function ForgotPassword() {
     const [ email, setEmail ] = useState();
     const [ error, setError ] = useState();

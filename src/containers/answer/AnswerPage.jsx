@@ -18,11 +18,12 @@ import { thematicBreakPlugin } from '@mdxeditor/editor/plugins/thematic-break'
 import styles from "./Answer.module.css"
 import { answerIcon, shareIcon } from "./imports"
 import { useParams } from "react-router-dom";
-import API_URL from "config/config";
 import dayjs from "dayjs";
 import Markdown from 'react-markdown';
 import rehypeRaw from 'rehype-raw';
 import Paginate from "components/paginate/Paginate";
+
+const API_URL = process.env.REACT_APP_API_URL;
 
 export default function AnswerPage() {
     const ref = React.useRef(null)

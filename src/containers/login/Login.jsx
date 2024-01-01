@@ -6,9 +6,10 @@ import { GoogleOAuthProvider, GoogleLogin } from '@react-oauth/google';
 import PropTypes from 'prop-types';
 import { useNavigate, useLocation } from "react-router-dom";
 
+const API_URL = process.env.REACT_APP_API_URL;
 
 async function loginUser(credentials) {
-    return fetch('http://localhost:8080/api/auth/login', {
+    return fetch(`${API_URL}/auth/login`, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'
@@ -24,7 +25,7 @@ const Login = ({ setUser }) => {
     const [password, setPassword] = useState();
     const [error, setError] = useState(null);
     const handleGoogleLogin = async ({ credential }) => {
-        const response = await fetch('http://localhost:8080/api/google/register', {
+        const response = await fetch(`${API_URL}/api/google/register`, {
             method: "POST",
             mode: "cors",
             headers: {

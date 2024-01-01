@@ -3,9 +3,10 @@ import styles from "../../containers/answer/Answer.module.css";
 import { arrowUp, arrowDown, ajiboye } from "../../containers/answer/imports";
 import Comment from "components/comment/Comment";
 import dayjs from "dayjs";
-import API_URL from "config/config";
 import Markdown from 'react-markdown';
 import rehypeRaw from 'rehype-raw';
+
+const API_URL = process.env.REACT_APP_API_URL;
 
 export default function Answer({ comment }) {
     const user = JSON.parse(localStorage.getItem('token'));

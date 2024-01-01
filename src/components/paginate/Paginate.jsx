@@ -9,8 +9,9 @@ import "./Paginate.css";
 import { Link } from "react-router-dom";
 import Question from "components/question/Question";
 import Answer from "components/answer/Answer";
-import API_URL from "config/config";
 import queryString from "query-string";
+
+const API_URL = process.env.REACT_APP_API_URL;
 
 function Repositories({ repositories, type, page }) {
   if (repositories.length === 0) {

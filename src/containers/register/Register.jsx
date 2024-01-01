@@ -2,7 +2,8 @@ import React, { useState } from "react";
 import styles from "./Register.module.css";
 import { logo } from "./imports";
 import { Link, useLocation, useNavigate } from 'react-router-dom';
-import API_URL from "config/config";
+
+const API_URL = process.env.REACT_APP_API_URL;
 
 export default function Register({ setUser }) {
   const { state } = useLocation();

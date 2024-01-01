@@ -2,7 +2,8 @@ import React, { useState } from 'react';
 import styles from './ResetPassword.module.css';
 import { Link, useNavigate, useParams } from 'react-router-dom';
 import { logo } from "./imports";
-import API_URL from 'config/config';
+
+const API_URL = process.env.REACT_APP_API_URL;
 
 export default function ResetPassword() {
     const [ password, setPassword ] = useState();

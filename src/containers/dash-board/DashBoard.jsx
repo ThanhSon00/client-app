@@ -1,9 +1,8 @@
 import React, { useState, useEffect } from "react";
 import styles from "./DashBoard.module.css";
-import API_URL from "config/config";
 import Paginate from "components/paginate/Paginate";
 
-
+const API_URL = process.env.REACT_APP_API_URL;
 
 export default function DashBoard({ setUser }) {
   const [ questionCount, setQuestionCount ] = useState(0);
