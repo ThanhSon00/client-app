@@ -1,0 +1,128 @@
+.left-col {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #002828;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.075);
+    height: 100vh;
+    padding: 20px 0;
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 10;
+    width: 114px;
+}
+
+.left-col:hover {
+    width: 190px;
+    align-items: center;
+    padding-left: 10px;
+    padding-right: 20px;
+    animation: smooth 0.5s ease-in-out;
+}
+
+.left-col span {
+    display: none;
+}
+
+.left-col:hover span {
+    display: block;
+}
+
+.upper-icons {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 250px;
+}
+
+.codeAsk-logo {
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.codeAsk-logo h4 {
+    color: #c7d9d9;
+    margin-left: 10px;
+    display: none;
+}
+
+.upper-icons a .outer-logo {
+    width: 56px;
+    height: 56px;
+}
+
+.upper-icons a .inner-logo {
+    position: absolute;
+    top: 15px;
+    left: 9px;
+    width: 39px;
+    height: 27px;
+}
+
+.upper-icons a .icon {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #c7d9d9;
+    text-decoration: none;
+}
+
+.left-col .lower-icon a {
+    display: flex;
+}
+
+.left-col .lower-icon span {
+    margin-left: 10px;
+}
+
+.left-col a {
+    text-decoration: none;
+    color: #c7d9d9;
+}
+
+.left-col .upper-icons .icon span {
+    margin-left: 10px;
+}
+
+
+.left-col .upper-icons .icon .number {
+    background-color: #c7d9d9;
+    color: #002828;
+    padding: 1px 3px;
+    border-radius: 2px;
+    font-size: 10px;
+}
+
+.left-col img {
+    width: 23px;
+    height: 23px;
+}
+
+@keyframes smooth {
+    from {
+        width: 114px;
+    }
+
+    to {
+        width: 190px;
+    }
+}
+
+@keyframes shift {
+    from {
+        margin-left: 120px;
+        width: 59%;
+    }
+
+    to {
+        margin-left: calc(120px + 76px);
+        width: calc(59% - 76px);
+    }
+}

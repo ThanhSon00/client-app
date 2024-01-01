@@ -1,0 +1,47 @@
+.search {
+    position: relative;
+}
+
+.search-icon {
+    position: absolute;
+    left: 10px;
+    top: 12px;
+}
+
+.notification {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.notification .avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.notification .status {
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.page-header input {
+    padding: 10px 10px 10px 30px;
+    width: 640px;
+    border: 0.5px solid #ced4da;
+}
+
+.page-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    height: 80px;
+    top: 0;
+    right: 0;
+    left: 114px;
+    background-color: #fff;
+    position: fixed;
+    z-index: 1;
+}

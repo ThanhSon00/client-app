@@ -1,0 +1,21 @@
+.right-side {
+    background-color: transparent;
+    width: 30%;
+    right: 10px;
+    top: 105px;
+    position: fixed;
+    bottom: 10px;
+}
+
+.right-side .btn {
+    color: #fff;
+    background-color: #002828;
+    border-radius: 4px;
+    padding: 10px 20px;
+}
+
+
+.right-side a {
+    text-decoration: none;
+}
+                                             

@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Poppins:wght@100;200;400&family=Roboto:wght@100;300;400;500&display=swap');
+
+
+.main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    flex-direction: row;
+    width: 100vw;
+    height: max-content;
+}  
+
+.hr {
+    color: var(--grey);
+    margin-bottom: 18px;
+}
+
+.signup {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.signupform-wrapper {
+    width: 50vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.codeaskform-logo-wrapper {
+    display: none;
+}
+
+.signup-intro {
+    width: 45%;
+}
+
+.signup-intro h3 {
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 39px;
+    color: var(--black);
+    padding-bottom: 12px;
+    text-align: center;
+    white-space: nowrap;
+
+}
+
+.signup-intro p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 18px;
+    color: var(--grey);
+    padding-bottom: 15px;
+    text-align: center;
+    padding-bottom: 50px;
+
+}
+
+.signup-form {
+    width: 60%;
+}
+
+.signup-form label {
+    display: block;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 18px;
+    color: var(--black);
+    margin-bottom: 8px;
+}
+
+
+/* INPUT LABEL CSS */
+.signup-form label span {
+    color: red;
+}
+
+/* INPUT BOX CSS */
+.signup-input {
+    display: inline-block;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 18px;
+    color: var(--grey);
+    padding: 8px 12px;
+    width: 100%;
+    border: 1px solid #CED4DA;
+    border-radius: 4px;
+}
+
+.form-wrapper {
+    margin-bottom: 16px;
+}
+
+.cyclic-design2 {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.signup {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+#togglePassword {
+    margin-left: -30px;
+    cursor: pointer;
+}
+
+.signup-btn {
+    display: block;
+    width: 100%;
+    padding: 6px 12px;
+    margin-bottom: 16px;
+    text-align: center;
+    border: none;
+    border-radius: 4px;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+/* GET STARTED BUTTON */
+.get {
+    composes: signup-btn;
+    color: var(--white);
+    background-color: var(--codeaskblue);
+    border: 1px solid var(--codeaskblue);
+}
+
+/* SIGNUP UP WITH GOOGLE LINKEDIN AND GITHUB BUTTON */
+.link {
+    composes: signup-btn;
+    color: var(--codeaskblue);
+    background-color: var(--white);
+    border: 1px solid var(--codeaskblue);
+    display: inline-block;
+}
+
+.signup-link-icons {
+
+    margin-right: 4px;
+    margin-bottom: 2px;
+    /*To make the icons align vertically */
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.signup-brief {
+
+    color: var(--grey);
+    margin-top: 20px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+}
+
+.signup-brief span a {
+    color: var(--codeaskblue);
+    text-decoration: underline;
+    font-size: 16px;
+
+}
+
+
+.back-button, .back-button a{
+    color: var(--grey);
+    margin: 20px 0px;
+}
+
+
+div.error-message {
+    margin-top: 4px;
+    font-size: 14px;
+    color: #DC3545;
+}

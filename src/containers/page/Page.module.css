@@ -1,0 +1,10 @@
+.login-body {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    min-height: 100vh;
+    max-width: 100%;
+    background-color: var(--white);
+    font-family: "Roboto", sans-serif;
+  }
+  
+  

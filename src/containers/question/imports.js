@@ -1,0 +1,20 @@
+export { default as searchIcon } from '../../assets/search-icon.png';
+export { default as icon } from '../../assets/icon.png';
+export { default as notification } from '../../assets/notification.png';
+export { default as status } from '../../assets/Status.png';
+export { default as outerLogo } from '../../assets/outer-logo.png';
+export { default as innerLogo } from '../../assets/inner-logo.png';
+export { default as home } from '../../assets/home.png';
+export { default as hamburger } from '../../assets/hamburger.png';
+export { default as bubble } from '../../assets/bubble.png';
+export { default as settings } from '../../assets/settings.png';
+export { default as logout } from '../../assets/logout.png';
+export { default as ellipse1 } from '../../assets/Ellipse 1.png';
+export { default as ellipse2 } from '../../assets/Ellipse 2.png';
+export { default as ellipse3 } from '../../assets/Ellipse 3.png';
+export { default as ellipse4 } from '../../assets/Ellipse 4.png';
+export { default as ellipse5 } from '../../assets/Ellipse 5.png';
+export { default as bxLogIn } from '../../assets/bx_log-in.png';
+export { default as vector } from '../../assets/Vector.png';
+export { default as clement } from '../../assets/Clement.png';
+
