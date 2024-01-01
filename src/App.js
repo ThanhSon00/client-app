@@ -18,7 +18,7 @@ import ResetPassword from './containers/reset-password/ResetPassword';
 import ProtectedRoute from 'utils/ProtectedRoute';
 import useUser from 'hooks/useToken'
 import LoginRoute from 'utils/LoginRoute';
-// import DashBoard from 'containers/dash-board/DashBoard';
+import DashBoard from 'containers/dash-board/DashBoard';
 
 const App = () => {
   const { user, setUser } = useUser({});
@@ -34,8 +34,8 @@ const App = () => {
         </Route>
 
         <Route path="/main-page/" element={<ProtectedRoute><MainPage /></ProtectedRoute>}>
-          {/* <Route path="/main-page/dash-board" element={<DashBoard setUser={setUser}/>} />
-          <Route path="/main-page/ask-question" element={<AskQuestion />} />
+          <Route path="/main-page/dash-board" element={<DashBoard setUser={setUser}/>} />
+          {/* <Route path="/main-page/ask-question" element={<AskQuestion />} />
           <Route path="/main-page/news/" element={<NewsPage />}>
             <Route path="/main-page/news/question/:id" element={<AnswerPage />} />
             <Route path="/main-page/news/question" element={<QuestionPage />} />  
