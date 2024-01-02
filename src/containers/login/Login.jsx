@@ -25,7 +25,7 @@ const Login = ({ setUser }) => {
     const [password, setPassword] = useState();
     const [error, setError] = useState(null);
     const handleGoogleLogin = async ({ credential }) => {
-        const response = await fetch(`${API_URL}/api/google/register`, {
+        const response = await fetch(`${API_URL}/google/register`, {
             method: "POST",
             mode: "cors",
             headers: {
