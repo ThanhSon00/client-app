@@ -48,6 +48,9 @@ export default function DashBoard({ setUser }) {
       const imageUrl = await response0.json();
       const response1 = await fetch(`${API_URL}/members/${memberId}`, {
         method: 'PATCH',
+        headers: {
+          'Content-Type': 'application/json',
+        },
         body: JSON.stringify({ avatar: imageUrl.image })
       })
 
