@@ -126,7 +126,7 @@ const Login = ({ setUser }) => {
                 <br />
                 <p>Don't have an account? <Link to="/page/register">Sign up</Link></p>
 
-                <p className={styles["back-button"]}>← <Link to="/home">Back</Link></p>
+                <p className={styles["back-button"]}>← <Link to="/">Back</Link></p>
             </form>
         </div>
     );

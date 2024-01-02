@@ -1,5 +1,8 @@
 import styles from "./Question.module.css";
 import { Link } from "react-router-dom";
+import React from 'react'
+import ReactTimeAgo from 'react-time-ago'
+
 export default function Question({ question, member, categories }) {
     return (
         <Link className={styles["questions"]} to={`/main-page/news/question/${question.id}`}>
@@ -17,7 +20,7 @@ export default function Question({ question, member, categories }) {
                         <ul>
                             {categories?.map((category) => <li><p>{category?.name}</p></li>)}
                         </ul>
-                        <p>asked 9 hours ago by <span>{member?.name}</span></p>
+                        <p>asked <ReactTimeAgo locale="en-US" date={question.createdAt}/> by <span>{member?.name}</span></p>
                     </div>
 
                 </div>
