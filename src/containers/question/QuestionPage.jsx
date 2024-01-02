@@ -29,7 +29,7 @@ export default function QuestionPage() {
                 </div>
                 <div className={styles["questions-wrapper"]}>
                     <Paginate          
-                        conditions={{ size: 3, search, filter: type }}             
+                        conditions={{ size: 4, search, filter: type }}             
                         type="questions" />
                 </div>
 
