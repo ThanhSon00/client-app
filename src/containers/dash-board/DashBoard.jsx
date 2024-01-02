@@ -110,7 +110,7 @@ export default function DashBoard({ setUser }) {
                 <a href="/" onClick={(e) => { e.preventDefault(); setType("comments") }}>Answers</a>
               </div>
             </div>
-            {/* <Paginate type={type} conditions={{ size: 3, memberId }} page={"DashBoard"} /> */}
+            <Paginate type={type} conditions={{ size: 3, memberId }} page={"DashBoard"} />
           </div>
           <div className={styles["top-post"]}>
             <div className={styles["pre-list"]}>
